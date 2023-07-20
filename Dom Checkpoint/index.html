@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="the-container">
+        <h1>Simple Shopping Cart</h1>
+        <div class="product-list-1">
+            <img src="img/mouse1.jpg" class="mouse-1-img">
+            <h3>Razer DeathAdder Essential Gaming Mouse</h3>
+            <p>Razer DeathAdder Essential Gaming Mouse: 6400 DPI Optical Sensor - 5 Programmable Buttons - Mechanical Switches - Rubber Side Grips - Classic Black</p>
+            <p class="the-price-mouse">$25</p>
+            <input type="number" id="item1" class="item-input" min="1" />
+            <a class="remove-btn" onclick="removeItem(this)">Remove</a>
+        </div>
+        <div class="product-list-2">
+            <img src="img/mouse2.jpg" class="mouse-2-img">
+            <h3>Logitech G502 HERO High Performance Wired Gaming Mouse</h3>
+            <p>Logitech G502 HERO High Performance Wired Gaming Mouse, HERO 25K Sensor, 25,600 DPI, RGB, Adjustable Weights, 11 Programmable Buttons, On-Board Memory, PC / Mac, Black</p>
+            <p class="the-price-mouse">$38</p>
+            <input type="number" id="item2" class="item-input" min="1" />
+            <a class="remove-btn" onclick="removeItem(this)">Remove</a>
+        </div>
+        <div class="product-list-3">
+            <img src="img/mouse3.jpg" class="mouse-3-img">
+            <h3>Corsair Dark Core RGB Pro, Wireless FPS/MOBA Gaming Mouse</h3>
+            <p>Corsair Dark Core RGB Pro, Wireless FPS/MOBA Gaming Mouse with SLIPSTREAM Technology, Black, Backlit RGB LED, 18000 DPI, Optical,CH-9315411-NA</p>
+            <p class="the-price-mouse">$71</p>
+            <input type="number" id="item3" class="item-input" min="1" />
+            <a class="remove-btn" onclick="removeItem(this)">Remove</a>
+        </div>
+        <div class="product-list-4">
+            <img src="img/keyboard1.jpg" class="keyboard-1-img">
+            <h3>Corsair K70 RGB PRO Mechanical Gaming Keyboard</h3>
+            <p>Corsair K70 RGB PRO Mechanical Gaming Keyboard - Cherry MX Brown Keyswitches - 8,000Hz Hyper-Polling - Durable PBT Double-Shot Keycaps - Magnetic Soft-Touch Palm Rest - Black (QWERTY - NA Layout)</p>
+            <p class="the-price-keyboard-1">$169</p>
+            <input type="number" id="item4" class="item-input" min="1" />
+            <a class="remove-btn" onclick="removeItem(this)">Remove</a>
+        </div>
+        <div class="product-list-5">
+            <img src="img/keyboard2.jpg" class="keyboard-2-img">
+            <h3>Razer Ornata V3 X Gaming Keyboard</h3>
+            <p>Razer Ornata V3 X Gaming Keyboard: Low-Profile Keys - Silent Membrane Switches - Spill Resistant - Chroma RGB Lighting - Ergonomic Wrist Rest - Classic Black</p>
+            <p class="the-price-keyboard-2">$34</p>
+            <input type="number" id="item5" class="item-input" min="1" />
+            <a class="remove-btn" onclick="removeItem(this)">Remove</a>
+        </div>
+        <div class="product-list-6">
+            <img src="img/keyboard3.jpg" class="keyboard-3-img">
+            <h3>Razer Ornata V3 X Gaming Keyboard</h3>
+            <p>Razer Ornata V3 X Gaming Keyboard: Low-Profile Keys - Silent Membrane Switches - Spill Resistant - Chroma RGB Lighting - Ergonomic Wrist Rest - Classic Black</p>
+            <p class="the-price-keyboard-3">$44</p>
+            <input type="number" id="item6" class="item-input" placeholder="" min="1" />
+            <a class="remove-btn" onclick="removeItem(this)">Remove</a>
+        </div>
+    </div>
+    <div class="the-container">
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <ul class="cart-items">
+                
+            </ul>
+            <p>Total Amount: $<span id="totalAmount">0</span></p>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
